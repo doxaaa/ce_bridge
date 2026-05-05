@@ -1,11 +1,3 @@
-// <--[tag]
-// @attribute <ce_item[<id>]>
-// @returns ItemTag
-// @description
-// Returns a CraftEngine item by its namespace ID.
-// Example: <ce_item[fmc:dark_matter]>
-// -->
-
 package org.doxa.ce_bridge.expression;
 
 import com.denizenscript.denizen.objects.ItemTag;
@@ -21,7 +13,13 @@ import org.bukkit.inventory.ItemStack;
 public class ExprCustomItem {
 
     public static void register() {
-        // Syntax: <ce_item[id]>
+
+        // <--[tag]
+        // @attribute <ce_item[<id>]>
+        // @returns ItemTag
+        // @description
+        // Returns a CraftEngine item by its namespace ID.
+        // -->
         TagManager.registerTagHandler(ObjectTag.class, "ce_item", (attribute) -> {
             if (!attribute.hasContext(1)) {
                 return null;

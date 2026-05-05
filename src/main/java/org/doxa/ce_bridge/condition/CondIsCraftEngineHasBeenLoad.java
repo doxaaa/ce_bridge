@@ -1,10 +1,3 @@
-// <--[tag]
-// @attribute <ce_is_loaded>
-// @returns ElementTag
-// @description
-// Returns true if CraftEngine has finished loading its resources.
-// -->
-
 package org.doxa.ce_bridge.condition;
 
 import com.denizenscript.denizencore.objects.core.ElementTag;
@@ -15,7 +8,13 @@ import org.doxa.ce_bridge.event.EvtCraftEngineReload;
 public class CondIsCraftEngineHasBeenLoad {
 
     public static void register() {
-        // Syntax: <ce_is_loaded>
+
+        // <--[tag]
+        // @attribute <ce_is_loaded>
+        // @returns ElementTag
+        // @description
+        // Returns true if CraftEngine has finished loading its resources.
+        // -->
         TagManager.registerTagHandler(ObjectTag.class, "ce_is_loaded", (attribute) -> {
             // Returns true/false based on our Event's static boolean
             return new ElementTag(EvtCraftEngineReload.hasBeenLoad());
