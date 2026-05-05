@@ -9,12 +9,6 @@ public class CondIsCraftEngineHasBeenLoad {
 
     public static void register() {
 
-        // <--[tag]
-        // @attribute <ce_is_loaded>
-        // @returns ElementTag
-        // @description
-        // Returns true if CraftEngine has finished loading its resources.
-        // -->
         TagManager.registerTagHandler(ObjectTag.class, "ce_is_loaded", (attribute) -> {
             // Returns true/false based on our Event's static boolean
             return new ElementTag(EvtCraftEngineReload.hasBeenLoad());

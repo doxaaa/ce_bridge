@@ -14,12 +14,6 @@ public class ExprCustomItem {
 
     public static void register() {
 
-        // <--[tag]
-        // @attribute <ce_item[<id>]>
-        // @returns ItemTag
-        // @description
-        // Returns a CraftEngine item by its namespace ID.
-        // -->
         TagManager.registerTagHandler(ObjectTag.class, "ce_item", (attribute) -> {
             if (!attribute.hasContext(1)) {
                 return null;
