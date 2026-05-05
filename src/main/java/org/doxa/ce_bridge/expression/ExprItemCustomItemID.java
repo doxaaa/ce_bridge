@@ -1,3 +1,10 @@
+// <--[tag]
+// @attribute <ItemTag.ce_id>
+// @returns ElementTag
+// @description
+// Returns the CraftEngine ID of a custom item.
+// -->
+
 package org.doxa.ce_bridge.expression;
 
 import com.denizenscript.denizen.objects.ItemTag;

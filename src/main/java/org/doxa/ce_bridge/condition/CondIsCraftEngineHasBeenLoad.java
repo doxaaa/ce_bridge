@@ -1,3 +1,10 @@
+// <--[tag]
+// @attribute <ce_is_loaded>
+// @returns ElementTag
+// @description
+// Returns true if CraftEngine has finished loading its resources.
+// -->
+
 package org.doxa.ce_bridge.condition;
 
 import com.denizenscript.denizencore.objects.core.ElementTag;
