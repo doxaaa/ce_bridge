@@ -1,3 +1,11 @@
+// <--[tag]
+// @attribute <ce_item[<id>]>
+// @returns ItemTag
+// @description
+// Returns a CraftEngine item by its namespace ID.
+// Example: <ce_item[fmc:dark_matter]>
+// -->
+
 package org.doxa.ce_bridge.expression;
 
 import com.denizenscript.denizen.objects.ItemTag;
