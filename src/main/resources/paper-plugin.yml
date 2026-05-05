@@ -1,0 +1,14 @@
+name: ce_bridge
+version: 1.0-SNAPSHOT
+main: org.doxa.ce_bridge.CEBridge # Make sure this points to your JavaPlugin class!
+api-version: '1.20' # Or your specific server version
+dependencies:
+  server:
+    CraftEngine:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    Denizen:
+      load: BEFORE
+      required: true
+      join-classpath: true
